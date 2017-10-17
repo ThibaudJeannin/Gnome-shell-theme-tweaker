@@ -6,13 +6,12 @@ then
   SCRIPTPATH=`dirname $SCRIPT`
   ICON='ubuntugnome.svg'
   FILE=$SCRIPTPATH/$ICON
-  # echo $SCRIPTPATH
   if test -f $FILE
   then
     sudo cp $FILE /usr/share/themes/Adapta-Nokto/gnome-shell/assets/show-apps.svg
     sudo cp $FILE /usr/share/themes/Adapta-Nokto/gnome-shell/assets/show-apps-hover.svg
     sudo cp $FILE /usr/share/themes/Adapta-Nokto/gnome-shell/assets/show-apps-checked.svg
-    echo Icon applied : $FILE '(default)'
+    echo Default icon applied
   else
     echo error : missing default file icon : ubuntugnome.svg
   fi
